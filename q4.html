@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function validateForm(form) {
+        if (form.firstname.value == "") {
+          alert("fill all the details");
+          return false;
+        } else if (!form.checkme.checked) {
+          alert("fill all the details");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="firstname" />
+      <input type="check" name="checkme" />
+      <input type="submit" value="submit" onclick="validateForm(this.form)" />
+    </form>
+  </body>
+</html>
